@@ -17,7 +17,7 @@
 					scrollTop: $(toDiv).offset().top
 				}, "slow");
 			}
-			$(window).load(function() {
+			$(document).ready(function() {
 				var age = moment().diff("2002-02", "years");
 				$("#age").text(age);
 			});
