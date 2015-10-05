@@ -1,5 +1,6 @@
 $(document).ready(function() {
-	if(moment().month() == 9 && moment().date() == 5) {
+	var today = moment().format("MM-DD");
+	if(today == "10-05") {
 		$.ajax({
 			url: "test.html",
 			success: function(data) {
