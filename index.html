@@ -1,79 +1,55 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>I'm Justin.</title>
-		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet" type="text/css">
-		<link href="css/caramel.min.css" rel="stylesheet" type="text/css">
-		<style>
-			body {
-				margin: 0;
-				font-family: "Roboto", sans-serif;
-			}
-
-            .center {
-                display: table;
-				min-width: 750px;
-			}
-
-            #icon {
-                float: left;
-                border-radius: 50%;
-            }
-
-			#stripe {
-                top: 0px;
-                width: 2.5%;
-				float: left;
-                height: 100%;
-                z-index: -1111;
-				position: absolute;
-				background-color: #009688;
-				box-shadow: -10px 0px 34px 0px rgba(0, 0, 0, 0.75);
-                -moz-box-shadow: -10px 0px 34px 0px rgba(0, 0, 0, 0.75);
-                -webkit-box-shadow: -10px 0px 34px 0px rgba(0, 0, 0, 0.75);
-			}
-
-			#main {
-                float: left;
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-                padding: 50px;
-            }
-
-			#main h3 {
-				font-weight: 100;
-			}
-
-			#main h5 {
-				font-weight: 300;
-			}
-
-			#main #name {
-				font-weight: 300;
-			}
-
-            #links h6 {
-                color: #009688;
-            }
-
-            #links h6:hover {
-                color: #00897B;
-            }
-		</style>
-	</head>
-	<body>
-		<div id="stripe"></div>
-		<div class="center">
-            <img id="icon" src="https://minotar.net/avatar/justin97530/225.png"></img>
-			<div id="main">
-				<h3>I'm <span id="name">Justin</span>.</h3>
-				<h5>I am a developer familiar with Node.js.</h5>
-                <div id="links" class="row">
-                    <a target="_blank" href="https://github.com/justin97530/"><h6 class="full col-4">GitHub</h6></a>
-                    <a target="_blank" href="https://gitlab.com/justin97530/"><h6 class="full col-4">GitLab</h6></a>
-                    <a target="_blank" href="https://github.com"><h6 class="full col-4">Keybase</h6></a>
+<head>
+    <title>Justin</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet" type="text/css">
+    <link href="http://caramel.ga/css/caramel.min.css" rel="stylesheet" type="text/css">
+    <style>
+        body { margin: 0; font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif; }
+        .center { width: inherit; }
+        @media (max-width: 828px) {
+            .icon { float: none !important; width: 100vw !important; text-align: center; }
+            .main { float: none !important; text-align: center; }
+        }
+        .icon { float: left; width: 120px; }
+        .icon img { border-radius: 50%; }
+        .main { text-align: center; padding: 0; float: right; padding-left: 10px; }
+        .main h3 { margin: 0; font-weight: 100; }
+        .main h6 { margin: 0 0 15px; font-weight: 300;}
+        .main #light { font-weight: 300; }
+        .links a { color: #009688; }
+        .links a:hover { color: #00897B; }
+        .stripe {
+            top: 0px;
+            width: 2.5%;
+            float: left;
+            height: 100%;
+            z-index: -1111;
+            position: absolute;
+            background-color: #009688;
+            box-shadow: -10px 0px 34px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -10px 0px 34px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: -10px 0px 34px 0px rgba(0, 0, 0, 0.75);
+        }
+    </style>
+    <div class="stripe"></div>
+    <div class="center row">
+        <div class="icon"><img src="https://minotar.net/avatar/justin97530/120"></div>
+        <div class="main">
+            <h3>I'm <span id="light">Justin</span>.</h3>
+            <h6>I'm a developer familiar with <span id="light">Node.js</span></h6>
+            <div class="links row">
+                <div class="full col-4">
+                    <a href="https://github.com/justin97530/" target="_blank"><i class="fa fa-fw fa-github"></i> GitHub</a>
                 </div>
-			</div>
-		</div>
-	</body>
+                <div class="full col-4">
+                    <a href="https://gitlab.com/justin97530/" target="_blank"><i class="fa fa-fw fa-code-fork"></i> GitLab</a>
+                </div>
+                <div class="full col-4">
+                    <a href="https://keybase.io/justin97530/" target="_blank"><i class="fa fa-fw fa-key"></i> Keybase</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
